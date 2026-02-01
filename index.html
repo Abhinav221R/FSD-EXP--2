@@ -1,0 +1,21 @@
+
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="word counter.css">
+</head>
+<body>
+<textarea id="text" rows="5" cols="40" maxlength="150" oninput="countChars()"></textarea>
+<p>Characters: <span id="count">0</span> / 150</p>
+<script>
+function countChars() {
+    let text = document.getElementById("text").value;
+    document.getElementById("count").innerText = text.length;
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>
